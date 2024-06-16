@@ -51,12 +51,14 @@ export default tsconfigRootDir =>
         "lib/",
         "node_modules/",
         "output/",
+
         "*.config.*",
 
         "packages/*/build/",
         "packages/*/coverage/",
         "packages/*/lib/",
         "packages/*/output/",
+        "packages/*/public/",
       ],
     },
     {

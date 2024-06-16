@@ -46,11 +46,17 @@ export default tsconfigRootDir =>
         "_site/",
         ".yarn/",
         ".git/",
+        "build/",
         "coverage/",
         "lib/",
         "node_modules/",
         "output/",
         "*.config.*",
+
+        "packages/*/build/",
+        "packages/*/coverage/",
+        "packages/*/lib/",
+        "packages/*/output/",
       ],
     },
     {

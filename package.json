@@ -1,9 +1,19 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "yarn3-typescript-nodejs-esbuild",
+  "name": "@oliversalzburg/eslint-config",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "Oliver Salzburg <oliver.salzburg@gmail.com>",
+  "homepage": "https://github.com/oliversalzburg/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oliversalzburg/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oliversalzburg/eslint-config/issues"
+  },
   "type": "module",
+  "main": "source/index.js",
   "scripts": {
     "build": "node build.js",
     "clean": "rm -rf ./output",
@@ -12,13 +22,22 @@
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:tsc": "tsc --noEmit",
-    "test": "tsc && node $(yarn bin mocha) output/*.test.js",
-    "test:coverage": "tsc && c8 --reporter=html-spa node $(yarn bin mocha) output/*.test.js"
+    "test": "echo This project has no tests."
+  },
+  "peerDependencies": {
+    "@eslint/js": "9.5.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-jsdoc": "48.2.12",
+    "eslint-plugin-tsdoc": "0.3.0",
+    "globals": "15.5.0",
+    "typescript-eslint": "8.0.0-alpha.30"
   },
   "devDependencies": {
     "@eslint/js": "9.5.0",
     "@types/chai": "4.3.16",
     "@types/eslint": "8.56.10",
+    "@types/eslint__js": "8.42.3",
+    "@types/eslint-config-prettier": "6.11.3",
     "@types/mocha": "10.0.6",
     "@types/node": "20.14.2",
     "c8": "10.1.2",
@@ -26,7 +45,9 @@
     "esbuild": "0.21.4",
     "eslint": "9.4.0",
     "eslint-config-prettier": "9.1.0",
-    "globals": "15.4.0",
+    "eslint-plugin-jsdoc": "48.2.12",
+    "eslint-plugin-tsdoc": "0.3.0",
+    "globals": "15.5.0",
     "lint-staged": "15.2.5",
     "mocha": "10.4.0",
     "prettier": "3.3.2",

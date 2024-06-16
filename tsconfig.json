@@ -13,6 +13,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "output",
+    "noEmit": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,

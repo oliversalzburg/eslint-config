@@ -40,7 +40,16 @@ export default tsconfigRootDir =>
     jsdoc.configs["flat/recommended"],
     prettierConfig,
     {
-      ignores: ["_site/", ".yarn/", ".git/", "coverage/", "lib/", "node_modules/", "*.config.*"],
+      ignores: [
+        "_site/",
+        ".yarn/",
+        ".git/",
+        "coverage/",
+        "lib/",
+        "node_modules/",
+        "output/",
+        "*.config.*",
+      ],
     },
     {
       languageOptions: {

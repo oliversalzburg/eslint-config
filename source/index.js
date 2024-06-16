@@ -52,8 +52,11 @@ export default tsconfigRootDir =>
         "node_modules/",
         "output/",
 
+        // Ignore config files. They're tough to get right.
         "*.config.*",
-        "*-precompiled.js",
+        "packages/*/*.config.*",
+        // Some projects have precompiled sources we don't want to check.
+        "source/*-precompiled.js",
 
         "packages/*/build/",
         "packages/*/coverage/",

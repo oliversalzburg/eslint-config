@@ -53,6 +53,7 @@ export default tsconfigRootDir =>
         "output/",
 
         "*.config.*",
+        "*-precompiled.js",
 
         "packages/*/build/",
         "packages/*/coverage/",

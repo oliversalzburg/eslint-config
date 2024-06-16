@@ -32,7 +32,9 @@ const rulesJsDoc = {
 };
 
 /**
+ * The main ESLint configuration.
  * @param {string} tsconfigRootDir - The root directory of YOUR project.
+ * @returns {import("@typescript-eslint/utils").TSESLint.FlatConfig.ConfigArray} The main ESLint configuration.
  */
 export default tsconfigRootDir =>
   tseslint.config(

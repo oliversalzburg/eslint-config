@@ -103,8 +103,26 @@ export default tsconfigRootDir =>
           },
         ],
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": ["error", { args: "none" }],
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            args: "all",
+            argsIgnorePattern: "^_",
+            caughtErrors: "all",
+            caughtErrorsIgnorePattern: "^_",
+            destructuredArrayIgnorePattern: "^_",
+            varsIgnorePattern: "^_",
+            ignoreRestSiblings: true,
+          },
+        ],
         "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/restrict-template-expressions": [
+          "error",
+          {
+            allowBoolean: true,
+            allowNumber: true,
+          },
+        ],
         "tsdoc/syntax": "error",
         ...rulesJsDoc,
         "jsdoc/check-tag-names": "off",

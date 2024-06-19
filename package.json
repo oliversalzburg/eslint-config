@@ -22,6 +22,7 @@
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:tsc": "tsc --noEmit",
+    "nextversion": "./.scripts/manifest-version.cjs",
     "test": "echo This project has no tests.",
     "preversion": "yarn run lint && yarn run build && yarn run test",
     "postversion": "git push"

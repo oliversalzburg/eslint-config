@@ -39,6 +39,7 @@ const rulesJsDoc = {
 export default tsconfigRootDir =>
   tseslint.config(
     eslint.configs.recommended,
+    // @ts-expect-error ESLint config compatibility is a nightmare.
     jsdoc.configs["flat/recommended"],
     prettierConfig,
     {

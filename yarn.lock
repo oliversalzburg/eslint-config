@@ -270,7 +270,7 @@ __metadata:
     eslint-plugin-jsdoc: ^50.0.0
     eslint-plugin-tsdoc: ^0.3.0
     globals: ^15.6.0
-    typescript-eslint: 8.0.1
+    typescript-eslint: ^8.0.1
   languageName: unknown
   linkType: soft
 

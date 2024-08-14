@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@oliversalzburg/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Oliver Salzburg <oliver.salzburg@gmail.com>",
   "homepage": "https://github.com/oliversalzburg/eslint-config",

@@ -103,6 +103,9 @@ export default tsconfigRootDir =>
         parserOptions: {
           project: true,
           tsconfigRootDir,
+          // We don't need to see this warning.
+          // If checks break, they break.
+          warnOnUnsupportedTypeScriptVersion: false,
         },
       },
       plugins: { jsdoc, tsdoc },
